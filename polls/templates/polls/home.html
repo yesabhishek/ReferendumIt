@@ -1,0 +1,76 @@
+{% extends 'polls/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<br>
+<h1>Hello {{ user.username }} </h1> 
+<p class="text-muted">{{ user.email }}</p>
+
+<br>
+<h1>Please read the below license file and Press the button </h1> 
+<br>
+<p>
+  Provisional Voting Requirements.–If an individual declares that such individual is a registered voter in the jurisdiction in which the individual desires to vote and that the individual is eligible to vote in an election for Federal office, but the name of the individual does not appear on the official list of eligible voters for the polling place or an election official asserts that the individual is not eligible to vote, such individual shall be permitted to cast a provisional ballot as follows:
+
+<p> (1) An election official at the polling place shall notify the individual that the individual may cast a provisional ballot in that election.</p>
+<p> (2) The individual shall be permitted to cast a provisional ballot at that polling place upon the execution of a written affirmation by the individual before an election official at the polling place stating that the individual is–</p>
+  <p>(A) a registered voter in the jurisdiction in which the individual desires to vote; and</p>
+  <p>(B) eligible to vote in that election.</p>
+  <p>(3) An election official at the polling place shall transmit the ballot cast by the individual or the voter information contained in the written affirmation executed by the individual under paragraph (2) to an appropriate State or local election official for prompt verification under paragraph </p>
+  <p>(4) If the appropriate State or local election official to whom the ballot or voter information is transmitted under paragraph (3) determines that the individual is eligible under State law to vote, the individual’s provisional ballot shall be counted as a vote in that election in accordance with State law.</p>
+  <p>(5)(A) At the time that an individual casts a provisional ballot, the appropriate State or local election official shall give the individual written information that states that any individual who casts a provisional ballot will be able to ascertain under the system established under subparagraph </p>
+  <p>(B) whether the vote was counted, and, if the vote was not counted, the reason that the vote was not counted.</p>
+  <p>(B) The appropriate State or local election official shall establish a free access system (such as a toll-free telephone number or an Internet website) that any individual who casts a provisional ballot may access to discover whether the vote of that individual was counted, and, if the vote was not counted, the reason that the vote was not counted.</p>
+</p>
+<br>
+<a class="btn btn-primary btn-lg" href="/1" role="button">Vote</a>
+<br>
+<br>
+{% else %}
+    
+<br>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to VotesApp!</h1>
+    <p class="lead">Make your voice loud and clear.</p>
+    <hr class="my-4">
+    <p>we each have very little control over what happens to other people or the world around us on a daily basis. But that's why casting our ballots is so crucial. Voting is an important right in our democracy because it gives us some collective say in how we want to be governed and who gets to make the big decisions that affect our society. Voting expands your personal sphere of control.
+    </p>
+    <p>When you vote, you are vocalizing what you need, want, and believe in. You are standing up and demanding to be counted. When you don't vote, you are silencing your heart and your conscience. Not voting is like giving your consent to the status quo (or to those you oppose), essentially saying that you don't care whether anything changes.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'register' %}" role="button">Join Today</a>
+  </div>
+
+  
+  <div class="content-section">
+    <div class="card-group">
+      <div class="card">
+        <img src="https://media.giphy.com/media/l2YWGoblzeLpfNQFW/giphy.gif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Friends</h5>
+          <p class="card-text">Our Netorking help you coonect to your school friends at just a search. </p>
+        </div>
+      </div>
+    <div class="card">
+      <img src="https://media.giphy.com/media/l2SpWPGLYJK94yY00/giphy.gif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Family</h5>
+        <p class="card-text">Now you can make your family tree stand more clear with our Family tree tool.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://media.giphy.com/media/3otPoAkkBAIHVLNumI/giphy.gif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Work</h5>
+        <p class="card-text">Add your Team Lead with our app and tell him you need a raise! just kidding! </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+{% endif %}   
+  
+{% endblock %}
