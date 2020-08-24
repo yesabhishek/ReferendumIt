@@ -7,27 +7,23 @@ from .models import Profile
 
 class UserRegistrationForm(UserCreationForm):
     
-    Email = forms.EmailField()
-    First_name = forms.CharField()
-    last_name = forms.CharField()
-    Address = forms.CharField()
-    P_no = forms.IntegerField()
-    Dob = forms.DateField()
+    email = forms.EmailField()
+ 
 
     class Meta:
         model = User
-        fields = ['username', 'First_name', 'last_name', 'Address', 'P_no', 'Email','Dob',  'password1' , 'password2']
+        fields = ['username', 'email', 'password1' , 'password2']
+
 
 
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
-    First_name = forms.CharField()
-    last_name = forms.CharField()
-    Address = forms.CharField()
-    P_no = forms.IntegerField()
-    Dob = forms.DateField()
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'First_name', 'last_name', 'Address', 'P_no','Dob']
+        fields = ['username', 'email']
 
+class ProfileUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['First_name', 'last_name', 'Address', 'P_no', 'Dob']

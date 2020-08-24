@@ -5,10 +5,10 @@ from django.contrib.auth.models import User
 class Profile(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    First_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    Address = models.CharField(max_length=300)
-    P_no = models.IntegerField()
+    First_name = models.CharField(max_length=50, default='Your First Name is currently is empty')
+    last_name = models.CharField(max_length=50 , default='Your Last Name is currently is empty')
+    Address = models.CharField(max_length=300 , default='Your Address is currently is empty')
+    P_no = models.IntegerField(default=None, blank=True, null=True)
     Dob = models.DateField(default=None, blank=True, null=True)
     
 
