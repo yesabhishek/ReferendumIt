@@ -15,6 +15,7 @@ from django.contrib.auth.decorators import login_required
 
 class HomeView(ListView):
   model = Question
+   
   template_name = 'polls/home.html'  # app/model_viewtype.html
   
   
