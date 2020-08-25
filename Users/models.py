@@ -8,7 +8,7 @@ class Profile(models.Model):
     First_name = models.CharField(max_length=50, default='Your First Name is currently is empty')
     last_name = models.CharField(max_length=50 , default='Your Last Name is currently is empty')
     Address = models.CharField(max_length=300 , default='Your Address is currently is empty')
-    P_no = models.IntegerField(default=0000000000)
+    P_no = models.IntegerField(default=None, blank=True, null=True)
     Dob = models.DateField(default=None, blank=True, null=True)
     
 
