@@ -8,12 +8,12 @@ from decouple import config
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'xxx9mptasa)ks4a2ss)dsz&k8868763aslvip$w!ao-)s@c%=&$)-plaiec_9n6c22p8'
-
+#SECRET_KEY = 'xxx9mptasa)ks4a2ss)dsz&k8868763aslvip$w!ao-)s@c%=&$)-plaiec_9n6c22p8'
+SECRET_KEY = 'eafa46dd7c14d28972e52291157946662fbe367722821b39'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['referendumit.herokuapp.com/']
 
 
 
@@ -105,7 +105,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
