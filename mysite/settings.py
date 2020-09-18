@@ -13,7 +13,7 @@ SECRET_KEY = 'eafa46dd7c14d28972e52291157946662fbe367722821b39'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['referendumit.herokuapp.com']
+ALLOWED_HOSTS = ['referendumit.herokuapp.com'] 
 
 
 
