@@ -1,11 +1,15 @@
 # VoteApp
-> This project is just an initial practice to work on Django. The following App is made totally using the official Django Tutorials. I have added the frontend to it and other than that the backend logic holds the same.  
+
+##### Click [here](https://referendumit.herokuapp.com/) to watch it live!
 
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Features](#features)
+* [Setup](#setup)
+* [Technologies](#technologies)
+* [Prerequisite](#Prerequisite)
+* [To-Do List](#To-Do-List)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
@@ -25,21 +29,22 @@ Its a full stack development for Voting purpose. Votes can be made on different 
 ## Setup
 The whole project can be downloaded to the local system and can be used thereafter. ONce you clone the repo or Download the Zip file, you will need to run the below line of code in your terminal or cmd:
 
-For Linux/Mac: Python manage.py runserver 
-For Windows: py manage.py runserver 
+* For Linux/Mac: 
+> Python manage.py runserver 
+* For Windows: 
+> py manage.py runserver 
 
 The above line of code should be run in the directory having the manage.py file. This will run the website in development server. 
 
-Prerequisite :
+## Prerequisite
 * Install Python
 * Install Django 
 
-## Features
-* Simple and easy use.
-* Exception handled.
 
-To-do list:
-* Add Google Authentication for the login purpose.
+
+## To-do List
+1. Add Google Authentication for the login purpose.
+2. Newsletter for new Polls. 
 
 
 ## Status
