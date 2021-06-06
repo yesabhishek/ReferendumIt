@@ -1,5 +1,7 @@
 # आवाज़ | Awaaz 
-##### Click [here](https://referendumit.herokuapp.com/) to watch it live!
+##### Click [here](https://referendumit.herokuapp.com/) to watch it live! 
+New development is in progress👨🏻‍💻, will be updated soon with some great release ⚡
+
 
 
 ## Table of contents
