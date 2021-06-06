@@ -5,7 +5,7 @@ from polls import views as polls_views
 from django.contrib.auth import views as auth_views             # importing Auth Views so that we can create an authentication system
 from django.conf import settings
 from django.conf.urls.static import static
-
+import debug_toolbar
 
 
 urlpatterns = [
@@ -17,10 +17,10 @@ urlpatterns = [
     path('update/', user_views.profile, name='update'),
     path('login/', auth_views.LoginView.as_view(template_name='Users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='Users/logout.html'), name='logout'),
+    path('__debug__/', include(debug_toolbar.urls)),
 ]
 
     
-
 
 
 
