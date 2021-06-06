@@ -1,5 +1,4 @@
-# VoteApp
-
+# आवाज़ | Awaaz 
 ##### Click [here](https://referendumit.herokuapp.com/) to watch it live!
 
 
@@ -12,10 +11,6 @@
 * [To-Do List](#To-Do-List)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
-
-## General info
-Its a full stack development for Voting purpose. Votes can be made on different questions. The data is stored under a database and can later be considered to make the final result. 
-
 
 
 ## Technologies
